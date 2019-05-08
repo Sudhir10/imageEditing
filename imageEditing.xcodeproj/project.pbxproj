@@ -13,6 +13,8 @@
 		012F2A512282A31500AA990F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 012F2A502282A31500AA990F /* main.m */; };
 		012F2A5F2282A6C400AA990F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012F2A5D2282A6C400AA990F /* MainViewController.m */; };
 		012F2A602282A6C400AA990F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012F2A5E2282A6C400AA990F /* MainViewController.xib */; };
+		012F2A762282BA2E00AA990F /* BrightnessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012F2A742282BA2E00AA990F /* BrightnessViewController.m */; };
+		012F2A772282BA2E00AA990F /* BrightnessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012F2A752282BA2E00AA990F /* BrightnessViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		012F2A5C2282A6C400AA990F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		012F2A5D2282A6C400AA990F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		012F2A5E2282A6C400AA990F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		012F2A732282BA2E00AA990F /* BrightnessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BrightnessViewController.h; path = imageEditing/BrightnessViewController.h; sourceTree = SOURCE_ROOT; };
+		012F2A742282BA2E00AA990F /* BrightnessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BrightnessViewController.m; path = imageEditing/BrightnessViewController.m; sourceTree = SOURCE_ROOT; };
+		012F2A752282BA2E00AA990F /* BrightnessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BrightnessViewController.xib; path = imageEditing/BrightnessViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +63,7 @@
 		012F2A402282A2FB00AA990F /* imageEditing */ = {
 			isa = PBXGroup;
 			children = (
-				012F2A692282B63A00AA990F /* brightness */,
+				012F2A722282BA0000AA990F /* brightness */,
 				012F2A682282B63A00AA990F /* cropping */,
 				012F2A672282B63A00AA990F /* filter */,
 				012F2A6A2282B63A00AA990F /* incline */,
@@ -91,13 +96,6 @@
 			path = cropping;
 			sourceTree = "<group>";
 		};
-		012F2A692282B63A00AA990F /* brightness */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = brightness;
-			sourceTree = "<group>";
-		};
 		012F2A6A2282B63A00AA990F /* incline */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +115,16 @@
 			children = (
 			);
 			path = scaling;
+			sourceTree = "<group>";
+		};
+		012F2A722282BA0000AA990F /* brightness */ = {
+			isa = PBXGroup;
+			children = (
+				012F2A732282BA2E00AA990F /* BrightnessViewController.h */,
+				012F2A742282BA2E00AA990F /* BrightnessViewController.m */,
+				012F2A752282BA2E00AA990F /* BrightnessViewController.xib */,
+			);
+			path = brightness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012F2A4E2282A31500AA990F /* LaunchScreen.storyboard in Resources */,
+				012F2A772282BA2E00AA990F /* BrightnessViewController.xib in Resources */,
 				012F2A602282A6C400AA990F /* MainViewController.xib in Resources */,
 				012F2A4B2282A31500AA990F /* Assets.xcassets in Resources */,
 			);
@@ -190,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012F2A512282A31500AA990F /* main.m in Sources */,
+				012F2A762282BA2E00AA990F /* BrightnessViewController.m in Sources */,
 				012F2A5F2282A6C400AA990F /* MainViewController.m in Sources */,
 				012F2A432282A2FB00AA990F /* AppDelegate.m in Sources */,
 			);

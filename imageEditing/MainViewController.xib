@@ -20,16 +20,62 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWw-PY-Bk0">
-                    <rect key="frame" x="56" y="82" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sFJ-jV-Fd3">
+                    <rect key="frame" x="132" y="80" width="111" height="240"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lts-0h-DeB">
+                            <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
+                            <state key="normal" title="Brightness"/>
+                            <connections>
+                                <action selector="brightnessAction:" destination="-1" eventType="touchUpInside" id="c3T-9u-j5z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN0-Dn-mb0">
+                            <rect key="frame" x="0.0" y="42" width="111" height="30"/>
+                            <state key="normal" title="Cropping"/>
+                            <connections>
+                                <action selector="croppingAction:" destination="-1" eventType="touchUpInside" id="sFl-ag-BYo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owH-wf-cST">
+                            <rect key="frame" x="0.0" y="84" width="111" height="30"/>
+                            <state key="normal" title="Filter"/>
+                            <connections>
+                                <action selector="filterAction:" destination="-1" eventType="touchUpInside" id="REn-pg-rBW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-Zs-5QT">
+                            <rect key="frame" x="0.0" y="126" width="111" height="30"/>
+                            <state key="normal" title="Incline"/>
+                            <connections>
+                                <action selector="inclineAction:" destination="-1" eventType="touchUpInside" id="uoE-i0-plh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-5e-LLG">
+                            <rect key="frame" x="0.0" y="168" width="111" height="30"/>
+                            <state key="normal" title="Resize"/>
+                            <connections>
+                                <action selector="resizeAction:" destination="-1" eventType="touchUpInside" id="QyS-Gv-Nox"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npu-wq-pOW">
+                            <rect key="frame" x="0.0" y="210" width="111" height="30"/>
+                            <state key="normal" title="Scaling"/>
+                            <connections>
+                                <action selector="scalingAction:" destination="-1" eventType="touchUpInside" id="Waz-je-MVf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sFJ-jV-Fd3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="132" id="EHw-cQ-OXB"/>
+                <constraint firstItem="sFJ-jV-Fd3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="QQ2-XX-f2G"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="sFJ-jV-Fd3" secondAttribute="trailing" constant="132" id="usB-dP-ofM"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="133.59999999999999" y="119.1904047976012"/>
         </view>
     </objects>
 </document>

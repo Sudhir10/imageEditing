@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 
+#import "BrightnessViewController.h"
+
 @interface MainViewController ()
 
 @end
@@ -18,15 +20,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)brightnessAction:(id)sender {
+    BrightnessViewController *brightnessViewController = [[BrightnessViewController alloc] init];
+    [self.navigationController pushViewController:brightnessViewController animated:YES];
+    
 }
-*/
+- (IBAction)croppingAction:(id)sender {
+}
+- (IBAction)filterAction:(id)sender {
+}
+- (IBAction)inclineAction:(id)sender {
+}
+- (IBAction)resizeAction:(id)sender {
+}
+- (IBAction)scalingAction:(id)sender {
+}
 
 @end
