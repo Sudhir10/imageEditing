@@ -58,12 +58,12 @@
 		012F2A402282A2FB00AA990F /* imageEditing */ = {
 			isa = PBXGroup;
 			children = (
-				012F2A662282A8A300AA990F /* scaling */,
-				012F2A652282A89800AA990F /* incline */,
-				012F2A642282A89300AA990F /* resize */,
-				012F2A632282A88E00AA990F /* filter */,
-				012F2A622282A86D00AA990F /* brightness */,
-				012F2A612282A7A300AA990F /* cropping */,
+				012F2A692282B63A00AA990F /* brightness */,
+				012F2A682282B63A00AA990F /* cropping */,
+				012F2A672282B63A00AA990F /* filter */,
+				012F2A6A2282B63A00AA990F /* incline */,
+				012F2A6B2282B63A00AA990F /* resize */,
+				012F2A6C2282B63A00AA990F /* scaling */,
 				012F2A412282A2FB00AA990F /* AppDelegate.h */,
 				012F2A422282A2FB00AA990F /* AppDelegate.m */,
 				012F2A5C2282A6C400AA990F /* MainViewController.h */,
@@ -77,42 +77,42 @@
 			path = imageEditing;
 			sourceTree = "<group>";
 		};
-		012F2A612282A7A300AA990F /* cropping */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = cropping;
-			sourceTree = "<group>";
-		};
-		012F2A622282A86D00AA990F /* brightness */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = brightness;
-			sourceTree = "<group>";
-		};
-		012F2A632282A88E00AA990F /* filter */ = {
+		012F2A672282B63A00AA990F /* filter */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = filter;
 			sourceTree = "<group>";
 		};
-		012F2A642282A89300AA990F /* resize */ = {
+		012F2A682282B63A00AA990F /* cropping */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = resize;
+			path = cropping;
 			sourceTree = "<group>";
 		};
-		012F2A652282A89800AA990F /* incline */ = {
+		012F2A692282B63A00AA990F /* brightness */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = brightness;
+			sourceTree = "<group>";
+		};
+		012F2A6A2282B63A00AA990F /* incline */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = incline;
 			sourceTree = "<group>";
 		};
-		012F2A662282A8A300AA990F /* scaling */ = {
+		012F2A6B2282B63A00AA990F /* resize */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resize;
+			sourceTree = "<group>";
+		};
+		012F2A6C2282B63A00AA990F /* scaling */ = {
 			isa = PBXGroup;
 			children = (
 			);
