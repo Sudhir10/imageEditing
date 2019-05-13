@@ -13,6 +13,11 @@
 		012F2A512282A31500AA990F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 012F2A502282A31500AA990F /* main.m */; };
 		012F2A5F2282A6C400AA990F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012F2A5D2282A6C400AA990F /* MainViewController.m */; };
 		012F2A602282A6C400AA990F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012F2A5E2282A6C400AA990F /* MainViewController.xib */; };
+		271C9F0422899F7A0032E7AA /* NKCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271C9EF822899F7A0032E7AA /* NKCropViewController.m */; };
+		271C9F0522899F7A0032E7AA /* NKCropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271C9EFA22899F7A0032E7AA /* NKCropRectView.m */; };
+		271C9F0622899F7A0032E7AA /* NKCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271C9EFD22899F7A0032E7AA /* NKCropView.m */; };
+		271C9F0722899F7A0032E7AA /* UIImage+NKCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 271C9EFE22899F7A0032E7AA /* UIImage+NKCrop.m */; };
+		271C9F0822899F7A0032E7AA /* NKResizeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 271C9F0022899F7A0032E7AA /* NKResizeControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		012F2A5C2282A6C400AA990F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		012F2A5D2282A6C400AA990F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		012F2A5E2282A6C400AA990F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		271C9EF722899F7A0032E7AA /* NKCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCropView.h; sourceTree = "<group>"; };
+		271C9EF822899F7A0032E7AA /* NKCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCropViewController.m; sourceTree = "<group>"; };
+		271C9EF922899F7A0032E7AA /* NKResizeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKResizeControl.h; sourceTree = "<group>"; };
+		271C9EFA22899F7A0032E7AA /* NKCropRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCropRectView.m; sourceTree = "<group>"; };
+		271C9EFB22899F7A0032E7AA /* UIImage+NKCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NKCrop.h"; sourceTree = "<group>"; };
+		271C9EFC22899F7A0032E7AA /* NKCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCropViewController.h; sourceTree = "<group>"; };
+		271C9EFD22899F7A0032E7AA /* NKCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCropView.m; sourceTree = "<group>"; };
+		271C9EFE22899F7A0032E7AA /* UIImage+NKCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NKCrop.m"; sourceTree = "<group>"; };
+		271C9EFF22899F7A0032E7AA /* NKCropRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCropRectView.h; sourceTree = "<group>"; };
+		271C9F0022899F7A0032E7AA /* NKResizeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKResizeControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +73,12 @@
 		012F2A402282A2FB00AA990F /* imageEditing */ = {
 			isa = PBXGroup;
 			children = (
+				271C9EF322899F7A0032E7AA /* cropping */,
 				012F2A662282A8A300AA990F /* scaling */,
 				012F2A652282A89800AA990F /* incline */,
 				012F2A642282A89300AA990F /* resize */,
 				012F2A632282A88E00AA990F /* filter */,
 				012F2A622282A86D00AA990F /* brightness */,
-				012F2A612282A7A300AA990F /* cropping */,
 				012F2A412282A2FB00AA990F /* AppDelegate.h */,
 				012F2A422282A2FB00AA990F /* AppDelegate.m */,
 				012F2A5C2282A6C400AA990F /* MainViewController.h */,
@@ -75,13 +90,6 @@
 				012F2A502282A31500AA990F /* main.m */,
 			);
 			path = imageEditing;
-			sourceTree = "<group>";
-		};
-		012F2A612282A7A300AA990F /* cropping */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = cropping;
 			sourceTree = "<group>";
 		};
 		012F2A622282A86D00AA990F /* brightness */ = {
@@ -117,6 +125,31 @@
 			children = (
 			);
 			path = scaling;
+			sourceTree = "<group>";
+		};
+		271C9EF322899F7A0032E7AA /* cropping */ = {
+			isa = PBXGroup;
+			children = (
+				271C9EF622899F7A0032E7AA /* Lib */,
+				271C9EFC22899F7A0032E7AA /* NKCropViewController.h */,
+				271C9EF822899F7A0032E7AA /* NKCropViewController.m */,
+			);
+			path = cropping;
+			sourceTree = "<group>";
+		};
+		271C9EF622899F7A0032E7AA /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				271C9EF722899F7A0032E7AA /* NKCropView.h */,
+				271C9EF922899F7A0032E7AA /* NKResizeControl.h */,
+				271C9EFA22899F7A0032E7AA /* NKCropRectView.m */,
+				271C9EFB22899F7A0032E7AA /* UIImage+NKCrop.h */,
+				271C9EFD22899F7A0032E7AA /* NKCropView.m */,
+				271C9EFE22899F7A0032E7AA /* UIImage+NKCrop.m */,
+				271C9EFF22899F7A0032E7AA /* NKCropRectView.h */,
+				271C9F0022899F7A0032E7AA /* NKResizeControl.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271C9F0422899F7A0032E7AA /* NKCropViewController.m in Sources */,
 				012F2A512282A31500AA990F /* main.m in Sources */,
+				271C9F0622899F7A0032E7AA /* NKCropView.m in Sources */,
+				271C9F0722899F7A0032E7AA /* UIImage+NKCrop.m in Sources */,
 				012F2A5F2282A6C400AA990F /* MainViewController.m in Sources */,
 				012F2A432282A2FB00AA990F /* AppDelegate.m in Sources */,
+				271C9F0522899F7A0032E7AA /* NKCropRectView.m in Sources */,
+				271C9F0822899F7A0032E7AA /* NKResizeControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
